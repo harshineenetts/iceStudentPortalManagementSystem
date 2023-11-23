@@ -1,0 +1,41 @@
+// Function to handle login
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  // Check username and password
+  // If credentials are valid, show the main menu and hide login page
+  document.getElementById('loginPage').classList.add('hidden');
+  document.getElementById('mainMenu').classList.remove('hidden');
+});
+
+// Functionality for menu links
+document.getElementById('listRecords').addEventListener('click', function(event) {
+  event.preventDefault();
+  // Show list records page and hide others
+});
+
+document.getElementById('addRecord').addEventListener('click', function(event) {
+  event.preventDefault();
+  // Show add record page and hide others
+});
+
+document.getElementById('deleteRecord').addEventListener('click', function(event) {
+  event.preventDefault();
+  // Show delete record page and hide others
+});
+
+document.getElementById('modifyRecord').addEventListener('click', function(event) {
+  event.preventDefault();
+  // Show modify record page and hide others
+});
+
+document.getElementById('searchRecord').addEventListener('click', function(event) {
+  event.preventDefault();
+  // Show search record page and hide others
+});
+
+document.getElementById('logout').addEventListener('click', function(event) {
+  event.preventDefault();
+  // Show logout page and hide others
+  document.getElementById('mainMenu').classList.add('hidden');
+  document.getElementById('logoutPage').classList.remove('hidden');
+});

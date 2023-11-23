@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Management Portal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="loginPage" class="page">
+    <h1>Login</h1>
+    <form id="loginForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <div id="mainMenu" class="page hidden">
+    <h1>Main Menu</h1>
+    <ul>
+      <li><a href="#" id="listRecords">List Records</a></li>
+      <li><a href="#" id="addRecord">Add Record</a></li>
+      <li><a href="#" id="deleteRecord">Delete Record</a></li>
+      <li><a href="#" id="modifyRecord">Modify Record</a></li>
+      <li><a href="#" id="searchRecord">Search Record</a></li>
+      <li><a href="#" id="logout">Logout</a></li>
+    </ul>
+  </div>
+
+  <div id="addRecordPage" class="page hidden">
+    <!-- Add Record Form -->
+    <!-- Include fields for student information -->
+  </div>
+
+  <div id="deleteRecordPage" class="page hidden">
+    <!-- Delete Record Form -->
+    <!-- Include fields to delete records by first name and last name -->
+  </div>
+
+  <div id="modifyRecordPage" class="page hidden">
+    <!-- Modify Record Form -->
+    <!-- Include fields to modify student information -->
+  </div>
+
+  <div id="searchRecordPage" class="page hidden">
+    <!-- Search Record Form -->
+    <!-- Include fields to search records by student details -->
+  </div>
+
+  <div id="logoutPage" class="page hidden">
+    <h1>Thank you</h1>
+    <p>You have been successfully logged out.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
